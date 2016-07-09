@@ -1,0 +1,4 @@
+Asignacion en la condicion: OJO con olvidarse del doble parentesis
+MAL: while (c = fgetc(entrada) != EOF) // devuelve siempre 0 o 1 (primero evalua y despues asigna)
+BIEN: while ((c = fgetc(entrada)) != EOF)
+
