@@ -31,6 +31,7 @@ int main(int argc, char* argv[]) {
 			}
 			actual->anterior = ultimo;
 			actual->pos = ftell(arch);
+			ultimo = actual;
 			delta += 2;
 		}
 	}
@@ -53,5 +54,6 @@ int main(int argc, char* argv[]) {
 		r_pos--;
 	}
 
+	liberar(ultimo);
 	fclose(arch);
 }
